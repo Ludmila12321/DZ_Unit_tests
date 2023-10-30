@@ -1,8 +1,8 @@
 public class Calculator {
-    public static double calculatingDiscount(double purchaseAmount, int
+    public static double calculateDiscount(double purchaseAmount, int
     discountAmount) {
-    //	purchaseAmount -	сумма	покупки
-    //	discountAmount -	размер	скидки
-    return 0; // Метод должен возвращать сумму покупки со скидкой
+        double discount = purchaseAmount * (discountAmount / 100.0);
+        double totalAmount = purchaseAmount - discount;
+        return totalAmount;
     }
     }
