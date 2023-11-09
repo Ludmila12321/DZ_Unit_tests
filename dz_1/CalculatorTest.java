@@ -15,7 +15,7 @@ public class CalculatorTest {
     @Test
     public void testCalculateDiscountWithInvalidArguments() {
         double purchaseAmount = 100.0;
-        int discountAmount = 200; // Неверное значение скидки
+        int discountAmount = 250; // Неверное значение скидки
 
         Assertions.assertThatThrownBy(() -> {
             Calculator.calculateDiscount(purchaseAmount, discountAmount);

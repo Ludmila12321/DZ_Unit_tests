@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
 public class Shop {
     private List<Product> products;
 
@@ -25,3 +26,4 @@ public class Shop {
         return Collections.max(products, (p1, p2) -> Double.compare(p1.getPrice(), p2.getPrice()));
     }
 }
+
