@@ -2,8 +2,8 @@ import pytest
 import ListComparator
 
 def test_compare_lists_greater_first():
-    list1 = [1, 2, 3, 4, 5]
-    list2 = [6, 7, 8, 9, 10]
+    list2 = [1, 2, 3, 4, 5]
+    list1 = [6, 7, 8, 9, 10]
     comparator = ListComparator(list1, list2)
     assert comparator.compare_lists() == "Первый список имеет большее среднее значение"
 
@@ -15,6 +15,6 @@ def test_compare_lists_greater_second():
 
 def test_compare_lists_equal():
     list1 = [1, 2, 3]
-    list2 = [4, 5, 6]
+    list2 = [1, 2, 3]
     comparator = ListComparator(list1, list2)
     assert comparator.compare_lists() == "Средние значения равны"
