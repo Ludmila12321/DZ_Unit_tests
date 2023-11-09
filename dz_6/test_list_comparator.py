@@ -1,5 +1,5 @@
 import pytest
-import ListComparator
+from ListComparator import ListComparator
 
 def test_compare_lists_greater_first():
     list2 = [1, 2, 3, 4, 5]
